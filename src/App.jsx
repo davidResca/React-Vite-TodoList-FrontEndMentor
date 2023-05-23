@@ -7,12 +7,7 @@ import TodoCreate from "./components/TodoCreate";
 import TodoFilter from "./components/TodoFilter";
 import TodoList from "./components/TodoList";
 
-const arrayTodos = JSON.parse(localStorage.getItem("todos")) || [
-  { id: 1, title: "sacar la basura", completed: true },
-  { id: 2, title: "estudiar React", completed: false },
-  { id: 3, title: "ir al gim", completed: false },
-  { id: 4, title: "merendar", completed: false },
-];
+const arrayTodos = JSON.parse(localStorage.getItem("todos")) || [];
 
 const reorder = (list, startIndex, endIndex) => {
   const result = [...list];
